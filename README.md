@@ -68,7 +68,7 @@ Open the command prompt to get started
 12. Now that we have flask, lets get the dependencies:
 ```
 > pip install requests
-> pip install dotenv
+> pip install python-dotenv
 ```
 13. Finally we can run the application!
 ```
