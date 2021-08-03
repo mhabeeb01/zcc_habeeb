@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title> {{  title }}</title> 
+
+        <script type="text/javascript" >
+
+        function myfunction(parameters){
+            wi =window.open("");
+            wi.title = ('Page');
+            let btnb2 = document.createElement("button");
+            btnb2.innerHTML ="Back"
+            btnb2.onclick = function() {
+                window.location = 'http://localhost:5000/index' ; 
+            }
+            wi.document.body.appendChild(btnb2) ; 
+            var tickets = {{ tickets|tojson }} ;  
+          title = "View your tickets below!"
+            const container = wi.document.createElement('div'); 
+            wi.document.write('<span style="color:black; font-size:40px">'+title+'<span>') ;
+                wi.document.write("<br>") ; 
+                wi.document.write("<br>") ; 
+                var i = parameters
+                i = parseInt(i) ;
+                
+                if(i>0){
+                    i = i-25 ;
+                        
+                } 
+                else{
+                    parameters = 25 ;                     
+                }
+                while(i<(parameters) && i<= tickets.length){
+                    var obj = tickets[i] 
+                var string = "Ticket ID Number " + obj.id+ " says: " + obj.subject + '\n' ;
+                wi.document.write('<span style="color:teal; font-size: 15px">'+string+'<span>') ;
+                    wi.document.write("<br>") ; 
+                    wi.document.write("<br>") ; 
+                    wi.document.write("<br>") ; 
+                i++ ;               
+            }
+            var back = "Previous: CTRL + W"
+            wi.document.write("<br>") ; 
+            wi.document.write('<span style="color:Black; font-size: 15px">'+back+'<span>') ;
+                wi.document.write("<br>") ; 
+                if(i>=tickets.length){
+                    wi.document.write("That is all the tickets!")
+                }
+                else{
+                    let btnn = document.createElement("button");
+            btnn.innerHTML ="Next"
+            btnn.onclick = function() {
+                myfunction(i+25) ; 
+            }
+            wi.document.body.appendChild(btnn) ;
+                }
+               
+            }
+            </script>
+
+
+                <script type="text/javascript" >
+        function find(){
+            var tickets = {{ tickets|tojson }} ;  
+            var a = document.getElementById("t1").value;
+            a = parseInt(a)
+            var tick = tickets[a-1];
+            var error = "Pick a smaller number!" 
+            var des ="Description: " + tick.description ;
+            var sub = "Subject of the ticket is: " + tick.subject;
+            var IId = tick.id;
+            var req = "The requestor of the ticket is: " + tick.requesterid ;
+            var title = "Information for Ticket ID Number " + IId ;
+            document.write('<span style="color:black; font-size:40px">'+title+'<span>') ;
+            document.write("<br>") ; 
+            document.write("<br>") ; 
+            document.write('<span style="color:teal; font-size: 20px">'+sub+'<span>') ;
+            document.write("<br>") ; 
+            document.write("<br>") ; 
+            document.write('<span style="color:teal; font-size: 20px">'+des+'<span>') ;
+            document.write("<br>") ;
+            document.write("<br>") ; 
+            document.write('<span style="color:teal; font-size: 20px">'+req+'<span>') ;
+            document.write("<br>") ;
+            let btn1 = document.createElement("button");
+            btn1.innerHTML ="Back"
+            btn1.onclick = function() {
+                window.location = 'http://localhost:5000/index' ;
+        }
+        document.body.appendChild(btn1) ; 
+    }
+        
+        </script>
+    </head>
+    <body>   
+       <h2 style="color:teal">Zendesk Coding Challenge</h2>
+       <h4 style="color:black">Mohammed Habeeb</h4>
+       <b>Click to view all tickets</b>
+    </br>
+        <input type="button"onclick= "myfunction('0')" value="View All">
+    </br>
+    </br>
+        <b>Insert the ticket ID number of the ticket you want to view</b>
+    </br>
+        <input type="text" name ="" id="t1">
+        <button onclick="find()">Find</button>    
+    </br>
+        <h5 style="color:red">If button gives no result; ticket does not exist. Try a smaller value!</h5>
+    </body>
+</html>

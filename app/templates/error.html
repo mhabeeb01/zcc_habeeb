@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title> Oops!! </title>
+<script lanugage=javascript>
+    function myfunction(){
+            let btnb2 = document.createElement("button");
+            btnb2.innerHTML ="Back"
+            btnb2.onclick = function() {
+                window.location = 'http://localhost:5000/index' ; 
+            }
+            document.body.appendChild(btnb2) ;
+
+}
+
+</script>
+
+</head>
+
+<body>
+<br>
+<div>
+    <h2 style="color:teal"> Wowzers, There was an error!!</h2>
+       <h4 style="color:black">Try Reloading with the Button below</h4>
+<button onclick="myfunction()">Click me </button>
+</div>
+<br>
+</body>
+</html>
