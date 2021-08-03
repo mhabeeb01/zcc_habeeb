@@ -1,4 +1,11 @@
 # Ticket Viewer for Zendesk 
+* [Quickstart](#Getting-Started)
+* [ZIP Method](#Method-2)
+* [How it all Works](#How-it-all-works)
+
+
+
+## Introduction: 
 Interactive Web Page that interacts with Zendesk's API allowing user to view ticket details. If you don't have python you can install it here
 - [Install Python](https://www.python.org/downloads/)
 
@@ -68,13 +75,16 @@ Open the command prompt to get started
 - [Zendesk Ticket Viewer](http://localhost:5000/index)
 
 
-##Method  2
+## Method 2
 - Download as zip file
 - Extract
 - move the .env file into zcc_habeeb-main directory (*make sure it is .env)
 - open cmd or terminal in the zcc_habeeb-main directory 
 - verify file format zcc_habeeb/
 - ![image](https://user-images.githubusercontent.com/83475870/128088825-ec80678c-9980-4163-b81b-dd4d27ce4e2a.png)
+
+## How it all works
+So in this project, I implemented a flask backend that would go and get the API tickets using Zendesks web API call. After that, The Flask would run on a virtual environment and run that python code to get API and keep calling the API until there is no more ['next_page'] and send that to the HTML and JavaScript front end using return render_template. The dotenv would contain the requirement, which is the API credentials. The javascript would loop through the JSON, display the correct information needed, and send it to the HTML.  
 
                       
 
