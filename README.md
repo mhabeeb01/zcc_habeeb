@@ -25,7 +25,7 @@ Open the command prompt to get started
 ```
 > COPY "{file_path\env}" .env
 ``` 
-4. Make sure that you see the .env file, the app directory.
+4. Make sure that you see the .env file, the app directory, zendesk.py
 ```
 > dir
 ```
