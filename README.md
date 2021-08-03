@@ -8,7 +8,7 @@
 ## Introduction: 
 Interactive Web Page that interacts with Zendesk's API allowing user to view ticket details. If you don't have python you can install it here
 - [Install Python](https://www.python.org/downloads/)
-IMPORTANT!! Make sure you have pop ups enabled for http://localhost:5000/index
+- IMPORTANT!! Make sure you have pop ups enabled for http://localhost:5000/index
 ## Requirements
 - Python 3.6+
 - Download .env file from email into working directory
