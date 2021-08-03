@@ -29,41 +29,41 @@ Open the command prompt to get started
 ```
 > dir
 ```
-4. View your Python Version
+5. View your Python Version
 ```
 > python3
 ```
-5. Now tell the system you want to use its virtual environment.
+6. Now tell the system you want to use its virtual environment.
 ```
 > source venv/bin/activate
 ```
-6. or for windows:
+7. or for windows:
 ```
-> source venv/bin/activate
+> venv\Scripts\activate
 ```
-7. It should now look like this:
+8. It should now look like this:
 ```
 >(venv)$ _
 ```
-8. Now that we have the virtual enviroment running, you can finally install Flask in it.
+9. Now that we have the virtual enviroment running, you can finally install Flask in it.
 ```
 > pip install flask
 ```
-9. verify you have flask in your virtual;
+10. verify you have flask in your virtual;
 ```
 > >>> import flask
 ```
 
-10. Now that we have flask, lets get the dependencies:
+11. Now that we have flask, lets get the dependencies:
 ```
 > pip install requests
 > pip install dotenv
 ```
-11. Finally we can run the application!
+12. Finally we can run the application!
 ```
 > flask run
 ```
-12. View the webpage with the link below or go to http://localhost:5000/index
+13. View the webpage with the link below or go to http://localhost:5000/index
 
 - [Zendesk Ticket Viewer](http://localhost:5000/index)
 
