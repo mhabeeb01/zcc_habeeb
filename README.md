@@ -6,7 +6,7 @@
 
 
 ## Introduction: 
-Interactive Web Page that interacts with Zendesk's API allowing user to view ticket details. If you don't have python you can install it here. To view the Python function, go to the routes.py file which is in the apps directory. For the the Javascript and HTML front end. Go inside the template folder which is inside the apps folder and view index.html. 
+Interactive Web Page that interacts with Zendesk's API allowing user to view ticket details. If you don't have python you can install it here. To view the Python function, go to the routes.py file which is in the apps directory. For the the Javascript and HTML front end. Go inside the template folder which is inside the apps folder and view index.html. The written test functions are also inside the apps under tests.py. Enjoy!
 - [Install Python](https://www.python.org/downloads/)
 - IMPORTANT!! Make sure you have pop ups enabled for http://localhost:5000/index
 - 
