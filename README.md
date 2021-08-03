@@ -6,9 +6,10 @@
 
 
 ## Introduction: 
-Interactive Web Page that interacts with Zendesk's API allowing user to view ticket details. If you don't have python you can install it here
+Interactive Web Page that interacts with Zendesk's API allowing user to view ticket details. If you don't have python you can install it here. To view the Python function, go to the routes.py file which is in the apps directory. For the the Javascript and HTML front end. Go inside the template folder which is inside the apps folder and view index.html. 
 - [Install Python](https://www.python.org/downloads/)
 - IMPORTANT!! Make sure you have pop ups enabled for http://localhost:5000/index
+- 
 ## Requirements
 - Python 3.6+
 - Download .env file from email into working directory
@@ -88,7 +89,9 @@ Open the command prompt to get started
 - ![image](https://user-images.githubusercontent.com/83475870/128088825-ec80678c-9980-4163-b81b-dd4d27ce4e2a.png)
 
 ## How it all works
-So in this project, I implemented a flask backend that would go and get the API tickets using Zendesks web API call. After that, The Flask would run on a virtual environment and run that python code to get API and keep calling the API until there is no more ['next_page'] and send that to the HTML and JavaScript front end using return render_template. The dotenv would contain the requirement, which is the API credentials. The javascript would loop through the JSON, display the correct information needed, and send it to the HTML.  
+So in this project, I implemented a flask backend that would go and get the API tickets using Zendesks web API call. After that, The Flask would run on a virtual environment and run that python code to get API and keep calling the API until there is no more ['next_page'] and send that to the HTML and JavaScript front end using return render_template. The dotenv would contain the requirement, which is the API credentials. The javascript would loop through the JSON, display the correct information needed, and send it to the HTML. 
+
+
 
                       
 
