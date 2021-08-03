@@ -3,8 +3,8 @@ Interactive Web Page that interacts with Zendesk's API allowing user to view tic
 - [Install Python](https://www.python.org/downloads/)
 
 ## Requirements
--Python 3.6+
--.env file from email.
+- Python 3.6+
+- Download .env file from email into working directory
 
 ## Getting Started
 Open the command prompt to get started
