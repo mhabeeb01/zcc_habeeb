@@ -74,14 +74,7 @@ Open the command prompt to get started
 - move the .env file into zcc_habeeb-main directory (*make sure it is .env)
 - open cmd or terminal in the zcc_habeeb-main directory 
 - verify file format zcc_habeeb/
-                       venv/
-                       app/
-                         test.py
-                         __init__.py
-                         routes.py
-                         templates/
-                              index.html
-                             error.html
-                         zendesk.py
-                         .env
+- ![image](https://user-images.githubusercontent.com/83475870/128088825-ec80678c-9980-4163-b81b-dd4d27ce4e2a.png)
+
+                      
 
